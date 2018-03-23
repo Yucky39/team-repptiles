@@ -9,5 +9,7 @@ class IndexController < ApplicationController
   end
 
   def policy
+  	@company_name = "*****"
+  	@mail = "***@**.**"
   end
 end
