@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container h1{
+  text-align: center;
+}
+.member-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.member {
+  float: left;
+  width: 33.3%;
+}
+.member p h2{
+	text-align: center;
+  padding-top:0px ;
+}
+.member img {
+  position: relative;
+}
