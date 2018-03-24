@@ -17,6 +17,7 @@
 
 	    <ul class="header-right">
 	      <li><%= link_to 'About Us',index_about_path %></li>
+	      <li><%= link_to '繋がる' , matching_index_path %></li>
 	      <% if user_signed_in? %>
 
 	          <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
