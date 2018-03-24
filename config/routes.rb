@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'chat_messages/index'
 
   get 'chat_tools/index'
