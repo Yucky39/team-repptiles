@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'chat_messages/index'
+
+  get 'chat_tools/index'
+
   get 'index/about'
 
   get 'index/contact'
