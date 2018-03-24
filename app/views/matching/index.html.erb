@@ -1,0 +1,11 @@
+<h1>爬虫類仲間と繋がる</h1>
+
+<div class="container">
+	<% @users.each do |user| %>
+		<%= user.user_image %><br>
+		<%= user.name %><br>
+		<%= user.discription %><br>
+		<%= link_to 'チャットを始める' ,chat_messages_index_path %>
+	<% end %>
+
+</div>
