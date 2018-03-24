@@ -6,11 +6,11 @@ class IndexController < ApplicationController
   end
 
   def terms
-    @company_name = "****"
+    @company_name = "Repty"
   end
 
   def policy
-  	@company_name = "*****"
+  	@company_name = "Repty"
   	@mail = "***@**.**"
   end
 end
