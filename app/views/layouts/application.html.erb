@@ -9,6 +9,25 @@
   </head>
 
   <body>
+
+
+  <header>
+	  <div class="container">
+ 	   <div id="logo"><%= link_to 'Repty', root_path %></div>
+
+	    <ul class="header-right">
+	      <li><%= link_to 'About Us',index_about_path %></li>
+	      <% if user_signed_in? %>
+
+	          <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+	      <% else %>
+	          <li><%= link_to '新規登録/ログイン',new_user_registration_path %></li>
+	      <% end %>
+	    </ul>
+	  	</div>
+	  </div>
+	</header>
+
     <%= yield %>
   </body>
 </html>
