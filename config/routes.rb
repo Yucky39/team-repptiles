@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root to: 'index#about'
+  root to: 'index#top'
   devise_for :users
   get 'chat_messages/index'
 

@@ -17,9 +17,11 @@
 
 	    <ul class="header-right">
 	      <li><%= link_to 'About Us',index_about_path %></li>
-	      <li><%= link_to '繋がる' , matching_index_path %></li>
+	      <li><%= link_to 'Q&A',index_contact_path %></li>
+	      <li><%= link_to 'ポリシー', index_policy_path %></li>
+	      <li><%= link_to '利用規約' , index_terms_path %></li>
 	      <% if user_signed_in? %>
-
+	    	  <li><%= link_to '繋がる' , matching_index_path %></li>
 	          <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
 	      <% else %>
 	          <li><%= link_to '新規登録/ログイン',new_user_registration_path %></li>
